@@ -420,7 +420,7 @@ function gameLogic(e) {
                 if (win === 20) {
                     clearInterval(timer);
                     finalElt.innerHTML =
-                        "You won " + score + " points <br> in " + time + " seconds";
+                        "Ganaste " + score + " puntos <br> en " + time + " segundos";
                     postElt.classList.remove("hidden");
                 }
             }
