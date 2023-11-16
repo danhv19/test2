@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Devcrud">
+    <title>Distancia IES Continental</title>
+    <link rel="stylesheet" href="assets/css/games.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/barra.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rREUyoXhAqP5iQl0br9f9VceKqIEm/9B+0WfkI+jo1VLMp6XQjG8U5Le9H6sN6MI" crossorigin="anonymous">
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h3 class="header-subtitle">Desarrollo de Sistemas de Información</h3>
+                <h6 class="header-mono">Construye el futuro digital con códigos y visión.</h6>
+                <a href="#game1" class="btn btn-outline-danger">Juguemos</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#game1" class="nav-link">Colgado</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">IES Distancia</h5>
+                        <div class="brand-subtitle">Modalidad a Distancia</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#game2" class="nav-link">Scramble</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#game3" class="nav-link">Memoria</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Sección de colgado -->
+    <section class="section" id="game1">
+        <div class="container">
+            <h2 class="mb-5 text-center"><span class="text-danger">Hombre</span> Colgado</h2>
+            <div class="row justify-content-center">
+
+                <div class="game-modal">
+                    <div class="content">
+                        <img src="#" alt="gif">
+                        <h4>Game Over!</h4>
+                        <p>La respuesta es: <span id="guessed-word"></span></p>
+                        <button class="play-again">Iniciar</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="hangman-box">
+                        <img src="#" draggable="false" alt="hangman-img">
+                    </div>
+                    <div class="game-box">
+                        <br><br>
+                        <ul class="word-display"></ul>
+                        <h4 class="hint-text">Pista: <b></b></h4>
+                        <h4 class="guesses-text">Intentos incorrectos: <b></b></h4>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+    
+<!-- Imagen 1 -->
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 web new">
+                <div class="portfolio-item">
+                    <img src="assets/imgs/emprender.jpg" class="img-fluid">
+                </div>                         
+            </div>
+        </div>
+    </div>
+    <span class="line"></span>
+    
+    <!-- Section 1-->
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal"></h2>
+        </div>
+    </section>    
+    
+<!-- Sección de Scramble -->
+<section class="section" id="game2">
+    <div class="badge badge-pill badge-info" id="hoverArea" onmouseenter="openModal()">Importante</div>
+    <div class="modalwindows" id="myModal">
+        <div class="modalwindows-content">
+            <hr><h5>Con la Modalidad a Distancia del Instituto Continental</h5>
+            <hr><h5>Estudia 100% virtual desde cualquier lugar</h5>
+            <hr><h5>Con el respaldo del Ministerio de Educación</h5>
+            <hr><button class="btn btn-primary btn-sm" onclick="closeModal()">Entendido</button>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <h2 class="mb-5 text-center"><span class="text-danger">Juego</span> de palabras</h2>
+
+        <div class="row justify-content-center">
+            
+                <!-- select box -->
+                <div class="container">
+                    <h4>Identifica la palabra correcta</h4>
+                    <div class="content">
+                        <p class="word"></p>
+                        <div class="details">
+                            <p class="hint">Pista: <span></span></p>
+                            <p class="time">Tiempo: <span><b>30</b>s</span></p>
+                        </div>
+                        <input type="text" spellcheck="false" placeholder="Ingrese la palabra" disabled>
+                        <div class="buttons">
+                            <button class="iniciar-btn btn btn-success btn-sm">Iniciar</button>
+                            <button class="refresh-word" disabled>Otra palabra</button>
+                            <button class="check-word" disabled>Revisar</button>
+                        </div>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section 2-->
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal"></h2>
+        </div>
+    </section>   
+
+ <!-- Section memoria-->
+    <section class="section" id="game3">
+        <div class="container text-center">
+            <h2 class="mb-5 text-center"><span class="text-danger">Juego</span> de memoria</h2>
+            
+            <button class="btn btn-success" id="startGame">Iniciar Juego</button>
+            
+            <div class="row justify-content-center">
+                
+
+                <section class="main">
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    <div class="box play"></div>
+                    
+                    <div id="state">
+                      <span id="time">0</span>
+                      <span id="score">0</span>
+                    </div>
+                  </section>
+                  
+                  <section id="pre" class="hidden">
+                    <h2>Elige el tema!</h2>
+                    <div id="themes">
+                        <p id="pokemon" class="themes" title="Pokemon">Pokemon</p>
+                        <p id="starwars" class="themes" title="Star Wars">Star Wars</p>
+                        <p id="lotr" class="themes" title="Lord of the Ring">Lord of the Ring</p>
+                        <p id="disney" class="themes" title="Disney">Disney</p>
+                        <p id="pixar" class="themes" title="Pixar">Pixar</p>
+                        <p id="harrypotter" class="themes" title="Harry Potter">Harry Potter</p>
+                    </div>
+                </section>
+                  
+                  
+                  <section id="post" class="hidden">
+                    <div>
+                      <h2>BRAVO !</h2>
+                      <p id="final"></p>
+                      <br>
+                      <p>
+                        <a id="again">jugar otra vez</a>
+                      </p>
+                    </div>
+                  </section>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4-->
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal"></h2>
+        </div>
+    </section>
+
+
+
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script>  <i class="ti-heart text-danger"></i> By <a href="https://icontinental.edu.pe" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">IC DISTANCIA</span></a>             </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/word-list.js" defer></script>
+    <script src="assets/js/words.js" defer></script>
+
+    <script src="assets/js/game.js" defer></script>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+   
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
